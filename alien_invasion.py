@@ -16,7 +16,7 @@ def run_game():
     bullets = Group()
     aliens = Group()
     pygame.display.set_caption("Alien Invasion")
-    gf.create_fleet(ai_settings,screen,aliens) #new
+    gf.create_fleet(ai_settings, screen, ship, aliens) #new
     # Start the main loop for the game.
     while True:
         gf.check_events(ai_settings, screen, ship, bullets)
